@@ -184,7 +184,7 @@ export function SettingsView() {
             </div>
             <p className="text-sm text-muted-foreground mt-1">
               Use this key to authenticate API requests. Keep it secure and
-              don't share it publicly.
+              don&rsquo;t share it publicly.
             </p>
           </div>
 

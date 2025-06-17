@@ -164,10 +164,17 @@ export function BillingView() {
                       <DialogHeader>
                         <DialogTitle>Purchase Credits</DialogTitle>
                         <DialogDescription>
-                          You're about to purchase{" "}
+                          {selectedPlan
+                            ? `You're about to purchase ${parseInt(
+                                selectedPlan
+                              ).toLocaleString()} credits.`
+                            : "Select a plan to continue."}
+                        </DialogDescription>
+                        {/* <DialogDescription>
+                          You&rsquo;re about to purchase{" "}
                           {plan.credits.toLocaleString()} credits for $
                           {plan.price}
-                        </DialogDescription>
+                        </DialogDescription> */}
                       </DialogHeader>
                       <div className="space-y-4">
                         <div className="grid grid-cols-2 gap-4">
